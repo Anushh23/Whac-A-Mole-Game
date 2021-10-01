@@ -1,4 +1,4 @@
-# Whack-A-Mole-Game
+# Whac-A-Mole-Game
 
 Description
 --------------
