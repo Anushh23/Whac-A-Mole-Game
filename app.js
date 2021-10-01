@@ -47,7 +47,7 @@ function randomSquare(){
 }
 
 squares.forEach(square=>{
-    square.addEventListener('mousedown',()=>{
+    square.addEventListener('click',()=>{
         if(square.id==hitPosition){
             if(temp!=0)
            { result++;
