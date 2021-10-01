@@ -27,6 +27,7 @@ function startGame(){
     currentTime=60;
     result=0;
     start.style.display="none";
+    temp++;
     moveMole();
 }
 
@@ -34,6 +35,7 @@ function randomSquare(){
     if(currentTime<=0){
         hitPosition=null;
         clearInterval(timerID);
+        document.querySelector('#final-score').innerHTML=result;
         $('.overlay').show();
         document.body.classList.add('overlay-is-open'); 
     }
@@ -47,7 +49,7 @@ function randomSquare(){
 }
 
 squares.forEach(square=>{
-    square.addEventListener('click',()=>{
+    square.addEventListener('mousedown',()=>{
         if(square.id==hitPosition){
             if(temp!=0)
            { result++;
